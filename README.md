@@ -1,5 +1,5 @@
 # ConvertAPP
-![](https://i.imgur.com/iZzzoG9.png)
+<img src="https://i.imgur.com/iZzzoG9.png" alt="Logo ConvertApp" width="200"/>
 
 ### Para que serve?
 - O **ConvertApp** é um aplicativo simples para conversão de moeda - Euro, Dolar e Real
