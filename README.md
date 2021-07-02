@@ -17,3 +17,12 @@
   - [x] Implementar react-router-dom
   - [ ] Implementar Redux para troca de informações entre páginas
   - [ ] Implementar requisições
+
+### 💻 Tecnologias utilizadas
+- React
+- Typescript
+- Styled-components
+- Redux
+
+### Obs
+- Tenho a intenção de refazer este app para react-native assim que acabar em react.
