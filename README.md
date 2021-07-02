@@ -1,6 +1,6 @@
 # ConvertAPP
 <p align="center">
-  <img src="https://i.imgur.com/iZzzoG9.png" alt="Logo ConvertApp" width="200"/>
+  <img src="https://i.imgur.com/zpNtbLx.png" alt="Logo ConvertApp" width="200"/>
 </p>
 
 ### Para que serve?
