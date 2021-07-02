@@ -6,6 +6,9 @@
 ### Para que serve?
 - O **ConvertApp** é um aplicativo simples para conversão de moeda - Euro, Dolar e Real 💰
 
+### Por que este app?
+- Minha intenção com este app é aprender conceitos de Redux e aplicá-los. Além disso, estudo React há 3 anos mas nunca consegui terminar um projeto, sempre algo aparece e eu paro de programar, então, com um app 'simples' e pequeno, eu realmente aplicaria os conceitos que eu desenvolvi em todo esse tempo.
+
 ### Planejamento
   - [x] [SiteMap](https://whimsical.com/convertapp-6Rwpm2zXfmRQGW8zR7ft6J)
   - [x] [Protótipo](https://www.figma.com/file/ALCWyJbZqP5UkpwhtSkCfM/Convers%C3%A3o-de-Moedas) 
