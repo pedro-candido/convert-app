@@ -1,4 +1,5 @@
 # ConvertAPP
+![](https://i.imgur.com/iZzzoG9.png)
 
 ### Para que serve?
 - O **ConvertApp** é um aplicativo simples para conversão de moeda - Euro, Dolar e Real
