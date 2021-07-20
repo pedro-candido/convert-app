@@ -1,9 +1,11 @@
-# ConvertAPP
+# Redux-Counter
 <p align="center">
   <img src="https://i.imgur.com/KDvVkLa.png" alt="Logo ConvertApp" width="200"/>
 </p>
 
-### App Preview
+
+
+# App Preview
 <p align="center">
   <img src="https://i.imgur.com/KLSUQNm.gif" />
 </p>
