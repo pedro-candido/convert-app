@@ -1,6 +1,11 @@
 # ConvertAPP
 <p align="center">
-  <img src="https://i.imgur.com/zpNtbLx.png" alt="Logo ConvertApp" width="200"/>
+  <img src="https://i.imgur.com/KDvVkLa.png" alt="Logo ConvertApp" width="200"/>
+</p>
+
+### App Preview
+<p align="center">
+  <img src="https://i.imgur.com/KLSUQNm.gif" />
 </p>
 
 ### ❔ Para que serve?
