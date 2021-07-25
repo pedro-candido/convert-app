@@ -25,13 +25,13 @@ const Convert = createSlice({
     }
 })
 
-export default Convert;
+export default Convert.reducer;
 const { fetchError, fetchStarted, fetchSuccess } = Convert.actions;
 
 export const getConvert = async (dispatch: Dispatch, currency: string) => {
-    dispatch(fetchStarted());
 
     try {
+        dispatch(fetchStarted());
         const { data } = await api.get(`/${currency}-BRL`);
         return dispatch(fetchSuccess(data))
     } catch (error) {
