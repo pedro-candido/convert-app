@@ -8,8 +8,9 @@ export const Container = styled('div')`
 `
 
 export const HomeImg = styled('img')`
-    width: 620px;
+    width: 520px;
     display: flex;
+    justify-content: center;
 `
 
 export const ButtonContainer = styled('div')`
@@ -20,6 +21,6 @@ export const ButtonContainer = styled('div')`
 
 export const ImageContainer = styled('div')`
     display: flex;
-    justify-content: space-between;
-    min-width: 620px;
+    justify-content: center;
+    min-width: 520px;
 `

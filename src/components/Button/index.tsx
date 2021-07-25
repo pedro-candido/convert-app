@@ -9,6 +9,7 @@ export interface ButtonProps {
     currency: string;
 }
 
+
 export const Button = ({ children, isBackgroundPurple, path, currency }: ButtonProps ) => {
     const history = useHistory();
 
