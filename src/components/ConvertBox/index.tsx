@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { RootState } from '../../store/configureStore.store';
 import { getConvert, userConvertion, valueToConvert, userCurrency } from '../../reducers/Convert.reducer'
 import { useHistory } from "react-router-dom";
-import { InputStyled, LabelStyled, ConvertBoxContainer, ButtonStyled } from './style'
+import { InputStyled, LabelStyled, ConvertBoxContainer, ButtonStyled, ButtonsWrapper } from './style'
 
 interface ConvertionProps {
     "code": string,
@@ -53,9 +53,14 @@ export const ConvertBox = ({ currency }: ConvertBoxProps) => {
                 type="number"
                 value={value}
             />
-            <ButtonStyled onClick={handleClick}>
-                Converter
-            </ButtonStyled>
+            <ButtonsWrapper>
+                <ButtonStyled onClick={() => history.push('/')}>
+                    Voltar
+                </ButtonStyled>
+                <ButtonStyled onClick={handleClick}>
+                    Converter
+                </ButtonStyled>
+            </ButtonsWrapper>
         </ConvertBoxContainer>
     )
 }

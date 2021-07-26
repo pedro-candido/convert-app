@@ -61,3 +61,10 @@ export const ButtonStyled = styled.button`
         cursor: pointer;
     }
 `
+
+export const ButtonsWrapper = styled.div`
+    white-space: nowrap;
+    & > button {
+        margin-right: 1%;
+    }
+`

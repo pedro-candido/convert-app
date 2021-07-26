@@ -18,11 +18,9 @@ export const ConvertedContainerWrapper = styled.div`
 export const ButtonContainerWrapper = styled.div`
     display: flex;
     justify-content: space-between;
-    @media(min-width: 1380px) {
-        min-width: 10%;
-    }
+    white-space: nowrap;
 
-    @media(max-width: 1379px) {
-        min-width: 15%;
+    & > button {
+        margin-right: 5%;
     }
 `
