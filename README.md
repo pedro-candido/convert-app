@@ -15,8 +15,8 @@
   - [x] Estrutura do projeto 
   - [x] Implementar styled-components
   - [x] Implementar react-router-dom
-  - [ ] Implementar Redux para troca de informações entre páginas
-  - [ ] Implementar requisições
+  - [x] Implementar Redux para troca de informações entre páginas
+  - [x] Implementar requisições
 
 ### 💻 Tecnologias utilizadas
 - React
