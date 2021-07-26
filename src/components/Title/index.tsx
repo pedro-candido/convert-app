@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Title = styled('h3')`
-    color: purple;
+    color: #9022FF;
     font-family: 'Roboto';
     font-size: 40px;
     display: flex;

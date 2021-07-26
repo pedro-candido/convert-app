@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { RootState } from '../../store/configureStore.store';
 import { getConvert, userConvertion } from '../../reducers/Convert.reducer'
 import { useHistory } from "react-router-dom";
-import { InputStyled, LabelStyled } from './style'
+import { InputStyled, LabelStyled, ConvertBoxContainer, ButtonStyled } from './style'
 
 interface ConvertionProps {
     "code": string,
@@ -27,7 +27,6 @@ interface ConvertBoxProps {
 export const ConvertBox = ({ currency }: ConvertBoxProps) => {
     const [value, setValue] = useState('')
     const convertion = useSelector((state: RootState) => Object.values(state.data)[0] as ConvertionProps);
-    const { value: conversionValue } = useSelector((state: RootState) => state)
     const dispatch = useDispatch();
     const history = useHistory();
 
@@ -43,8 +42,8 @@ export const ConvertBox = ({ currency }: ConvertBoxProps) => {
     }
 
     return (
-        <div>
-            <LabelStyled htmlFor="value-to-convert"> Valor: </LabelStyled>
+        <ConvertBoxContainer>
+            <LabelStyled htmlFor="value-to-convert"> Valor </LabelStyled>
             <InputStyled
                 name="value-to-convert"
                 id="value-to-convert"
@@ -52,7 +51,9 @@ export const ConvertBox = ({ currency }: ConvertBoxProps) => {
                 type="number"
                 value={value}
             />
-            <button onClick={handleClick}>Converter</button>
-        </div>
+            <ButtonStyled onClick={handleClick}>
+                Converter
+            </ButtonStyled>
+        </ConvertBoxContainer>
     )
 }
