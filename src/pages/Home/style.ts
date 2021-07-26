@@ -4,11 +4,12 @@ export const Container = styled('div')`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 `
 
 export const HomeImg = styled('img')`
-    width: 520px;
+    width: 70%;
+    max-width: 440px;
     display: flex;
     justify-content: center;
 `
@@ -16,11 +17,12 @@ export const HomeImg = styled('img')`
 export const ButtonContainer = styled('div')`
     display: flex;
     justify-content: space-between;
-    min-width: 200px;
+    max-width: 200px;
+    margin: 0 auto;
 `
 
 export const ImageContainer = styled('div')`
     display: flex;
     justify-content: center;
-    min-width: 520px;
+    image-rendering: optimizeSpeed;
 `

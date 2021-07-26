@@ -8,3 +8,4 @@ const reducer = ConvertReducer;
 const store = configureStore({reducer, middleware});
 
 export default store;
+export type RootState = ReturnType<typeof reducer>

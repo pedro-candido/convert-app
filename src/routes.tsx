@@ -1,4 +1,4 @@
-import { Home, Convert } from './pages'
+import { Home, Convert, Result } from './pages'
 import { Route, Switch } from 'react-router-dom'
 
 export const routes = (
@@ -11,6 +11,9 @@ export const routes = (
     </Route>
     <Route path="/convert/:currency">
       <Convert/>
+    </Route>
+    <Route path="/result">
+      <Result />
     </Route>
   </Switch>
   )
