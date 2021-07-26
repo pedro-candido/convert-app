@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react'
 import { RootState } from '../../store/configureStore.store';
-import { getConvert, userConvertion } from '../../reducers/Convert.reducer'
+import { getConvert, userConvertion, valueToConvert } from '../../reducers/Convert.reducer'
 import { useHistory } from "react-router-dom";
 import { InputStyled, LabelStyled, ConvertBoxContainer, ButtonStyled } from './style'
 
@@ -38,6 +38,7 @@ export const ConvertBox = ({ currency }: ConvertBoxProps) => {
     const handleClick = () => {
         let valueConverted = Number(convertion.ask) * Number(value);
         dispatch(userConvertion(valueConverted));
+        dispatch(valueToConvert(value));
         history.push('/result')
     }
 

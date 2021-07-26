@@ -1,14 +1,16 @@
 import { useSelector } from 'react-redux';
-import { RootState } from '../../store/configureStore.store'
+import { RootState } from '../../store/configureStore.store';
+import { ConvertedContainer } from './style'
 
 export const Result = () => {
-    const { value: conversionValue } = useSelector((state: RootState) => state)
+    const { value: conversionValue, valueToConvert } = useSelector((state: RootState) => state);
 
-    console.log(conversionValue);
 
     return (
-        <>
+        <ConvertedContainer>
+            {valueToConvert}
+            {'>'}
             {Number(conversionValue).toFixed(2)}
-        </>
+        </ConvertedContainer>
     );
 }

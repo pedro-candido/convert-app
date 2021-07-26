@@ -8,10 +8,6 @@ export const Header = () => {
             <Link to="/">
                 <Logo />
             </Link>
-            <Nav>
-                <HeaderTab link="/convert/USD" text="Dolar"/>
-                <HeaderTab link="/convert/EUR" text="Euro"/>
-            </Nav>
         </StyledHeader>
     )
 }

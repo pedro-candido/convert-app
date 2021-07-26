@@ -40,7 +40,7 @@ export const ConvertBoxContainer = styled.div`
     flex-flow: column;
     max-width: 200px;
     width: 100%;
-    margin: 5% auto;
+    margin: auto;
 `
 
 export const ButtonStyled = styled.button`

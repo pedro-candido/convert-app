@@ -9,6 +9,10 @@ export const StyledHeader = styled.header`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
 `
 
 export const Nav = styled.nav`
