@@ -9,12 +9,16 @@ const Convert = createSlice({
         data: {},
         error: {},
         value: {},
-        valueToConvert: 0
+        valueToConvert: 0,
+        currency: ''
     },
     name: 'convertReducer',
     reducers: {
         userConvertion(state, { payload }) {
             state.value = payload;
+        },
+        userCurrency(state, { payload }){
+            state.currency = payload;
         },
         valueToConvert(state, { payload }) {
             state.valueToConvert = payload;
@@ -35,7 +39,7 @@ const Convert = createSlice({
 })
 
 export default Convert.reducer;
-export const { fetchError, fetchStarted, fetchSuccess, userConvertion, valueToConvert } = Convert.actions;
+export const { fetchError, fetchStarted, fetchSuccess, userConvertion, valueToConvert, userCurrency } = Convert.actions;
 export const getConvert = async (dispatch: Dispatch, currency: string) => {
     try {
         dispatch(fetchStarted());

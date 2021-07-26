@@ -3,14 +3,12 @@ import { RootState } from '../../store/configureStore.store';
 import { ConvertedContainer } from './style'
 
 export const Result = () => {
-    const { value: conversionValue, valueToConvert } = useSelector((state: RootState) => state);
+    const { value: conversionValue, valueToConvert, currency } = useSelector((state: RootState) => state);
 
 
     return (
         <ConvertedContainer>
-            {valueToConvert}
-            {'>'}
-            {Number(conversionValue).toFixed(2)}
+             R$ {valueToConvert} {'>'} {currency === 'USD' && '$'}{Number(conversionValue).toFixed(2)}{currency === 'EUR' && '€'}
         </ConvertedContainer>
     );
 }
