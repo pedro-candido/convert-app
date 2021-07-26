@@ -68,3 +68,4 @@ export const ButtonsWrapper = styled.div`
         margin-right: 1%;
     }
 `
+

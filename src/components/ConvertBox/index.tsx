@@ -40,7 +40,7 @@ export const ConvertBox = ({ currency }: ConvertBoxProps) => {
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => setValue(event.target.value);
 
     const showError = () => {
-        toast.error('😲 Opa, digite um número', {
+        toast.dark('😲 Opa, digite um número', {
             position: toast.POSITION.TOP_RIGHT
         });
     }
