@@ -8,7 +8,7 @@ export const Result = () => {
 
     return (
         <ConvertedContainer>
-             R$ {valueToConvert} {'>'} {currency === 'USD' && '$'}{Number(conversionValue).toFixed(2)}{currency === 'EUR' && '€'}
+             R$ {valueToConvert} {'>'} {currency === 'USD' ? '$' : '€'}{Number(conversionValue).toFixed(2)}
         </ConvertedContainer>
     );
 }
