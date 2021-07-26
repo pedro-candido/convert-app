@@ -8,7 +8,7 @@ export const Result = () => {
 
     return (
         <>
-            {conversionValue}
+            {Number(conversionValue).toFixed(2)}
         </>
     );
 }
