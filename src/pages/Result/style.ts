@@ -9,4 +9,14 @@ export const ConvertedContainer = styled.div`
     height: 100%;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+`
+export const ConvertedContainerWrapper = styled.div`
+    margin-bottom: 2%;
+`
+
+export const ButtonContainerWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    min-width: 10%;
 `
