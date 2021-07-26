@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react'
 import { RootState } from '../../store/configureStore.store';
 import { getConvert, userConvertion } from '../../reducers/Convert.reducer'
-import { useParams, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { InputStyled, LabelStyled } from './style'
 
 interface ConvertionProps {
