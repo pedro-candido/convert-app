@@ -4,20 +4,23 @@ import { useEffect } from 'react'
 import { RootState } from '../../store/configureStore.store';
 import { getConvert, userConvertion, valueToConvert, userCurrency } from '../../reducers/Convert.reducer'
 import { useHistory } from "react-router-dom";
-import { InputStyled, LabelStyled, ConvertBoxContainer, ButtonStyled, ButtonsWrapper } from './style'
+import { InputStyled, LabelStyled, ConvertBoxContainer, ButtonStyled, ButtonsWrapper } from './style';
+import { ToastContainer, toast } from 'react-toastify'
+
+import 'react-toastify/dist/ReactToastify.css';
 
 interface ConvertionProps {
-    "code": string,
-    "codein": string,
-    "name": string,
-    "high": string,
-    "low": string,
-    "varBid": string,
-    "pctChange": string,
-    "bid": string,
-    "ask": string,
-    "timestamp": string,
-    "create_date": string
+    code: string,
+    codein: string,
+    name: string,
+    high: string,
+    low: string,
+    varBid: string,
+    pctChange: string,
+    bid: string,
+    ask: string,
+    timestamp: string,
+    create_date: string
 }
 
 interface ConvertBoxProps {
@@ -35,16 +38,28 @@ export const ConvertBox = ({ currency }: ConvertBoxProps) => {
     }, [dispatch, currency])
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => setValue(event.target.value);
+
+    const showError = () => {
+        toast.error('😲 Opa, digite um número', {
+            position: toast.POSITION.TOP_RIGHT
+        });
+    }
+
     const handleClick = () => {
-        let valueConverted = Number(convertion.ask) * Number(value);
-        dispatch(userConvertion(valueConverted));
-        dispatch(valueToConvert(value));
-        dispatch(userCurrency(currency))
-        history.push('/result')
+        if (Number(value)) {
+            let valueConverted = Number(convertion.ask) * Number(value);
+            dispatch(userConvertion(valueConverted));
+            dispatch(valueToConvert(value));
+            dispatch(userCurrency(currency));
+            history.push('/result');
+        } else {
+            showError();
+        }
     }
 
     return (
         <ConvertBoxContainer>
+            <ToastContainer />
             <LabelStyled htmlFor="value-to-convert"> Valor </LabelStyled>
             <InputStyled
                 name="value-to-convert"

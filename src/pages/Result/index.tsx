@@ -12,7 +12,7 @@ export const Result = () => {
     return (
         <ConvertedContainer>
             <ConvertedContainerWrapper>
-                {currency === 'USD' ? '$' : '€'}{valueToConvert} {'>'} R${Number(conversionValue).toFixed(2)}
+                {currency === 'USD' ? '$' : '€'}{valueToConvert ? valueToConvert : '0'} {'>'} R${Number(conversionValue).toFixed(2)}
              </ConvertedContainerWrapper>
              <ButtonContainerWrapper>
                 <ButtonStyled onClick={() => history.push(`/convert/${currency}`)}>
